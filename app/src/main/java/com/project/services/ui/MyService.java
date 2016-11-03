@@ -15,7 +15,8 @@ import com.project.services.tool.SeedNmber;
 public class MyService extends Service {
     public NioTcpServer tcpServer;
 
-    public MyService() {
+    public MyService()
+    {
 
     }
 
