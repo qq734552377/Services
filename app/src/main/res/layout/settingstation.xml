@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/ssid"
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:textSize="19sp"
+            android:gravity="center_vertical"
+            android:text="账号:"/>
+        <EditText
+            android:id="@+id/ssid_ed"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/ssid"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:textSize="19sp"
+            android:gravity="center_vertical"
+            android:text="密码:"/>
+        <EditText
+            android:id="@+id/password_ed"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/password"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:text="确定"
+        />
+
+</RelativeLayout>
